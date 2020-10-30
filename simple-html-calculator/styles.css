@@ -1,0 +1,71 @@
+html, body { height: 100%; } 
+
+html { width: 100%; } 
+
+body {
+    display: table; 
+    margin: 0 auto; 
+    width: 50%; 
+    background-color: #2cbfc9
+}
+
+.addition {
+    padding: 20px;
+    display: table-cell; 
+    height: 100%; 
+    overflow: auto;
+    vertical-align: middle; 
+    width: 100%; 
+}
+
+.subtraction {
+    padding: 20px;
+    display: table-cell; 
+    height: 100%; 
+    overflow: auto;
+    vertical-align: middle; 
+    width: 100%; 
+}
+
+.multiplication {
+    padding: 20px;
+    display: table-cell; 
+    height: 100%; 
+    overflow: auto;
+    vertical-align: middle; 
+    width: 100%; 
+}
+
+button[name="add"] {
+    color: #c97d2c;
+  } 
+
+  button[name="subtract"] {
+    color: #c97d2c;
+  } 
+
+  button[name="multiply"] {
+    color: #c97d2c;
+  } 
+
+  h1 {
+    padding: 20px;
+    display: table-cell; 
+    height: 100%; 
+    overflow: auto;
+    vertical-align: middle; 
+    width: 100%; 
+    color: #c92f2c;
+  }
+
+  h2 {
+    padding: 20px;
+    display: table-cell; 
+    height: 100%; 
+    overflow: auto;
+    vertical-align: middle; 
+    width: 100%; 
+    color: #c92f2c;
+  }
+  
+
