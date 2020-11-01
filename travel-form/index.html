@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="airplane-image">
+        <div class="airplane-text">
+            <form name="airplaneForm">
+                <b>
+                <h1>Au Revoir Airlines</h1>
+                <p>Passenger Information</p>
+                <label>First Name: <input type="text" id="first-name"/></label>
+                <br><br>
+                <label>Last Name: <input type="text" id="last-name"/></label>
+                <br><br>
+                <label>Age: <input type="number" name="age"/></label>
+                <br><br>
+                <div class="buttons"></div>
+                    Male <input type="radio" name="gender" value="male"/>
+                    Female <input type="radio" name="gender" value="female"/>
+                    <br><br>
+                    Location: <select name="location" id="location">
+                        <option value="Columbia">Columbia</option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="Hamberg">Hamberg</option>
+                    </select>
+                    <br><br>
+                    <input type="checkbox" value="vegetarian" name="diet">
+                        <label for="diet">Vegetarian</label>
+                    <input type="checkbox" value="kosher" name="diet">
+                        <label for="kosher">Kosher</label>
+                    <input type="checkbox" value="lactose free" name="diet">
+                        <label for="lactose-free">Lactose Free</label>
+                    <br><br>
+                    <button>submit</button>
+                </div>
+                </b>
+            </form>
+        </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
