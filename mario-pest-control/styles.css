@@ -1,0 +1,79 @@
+html, body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #E52521;
+  align-content: left;
+  text-align: left;
+}
+
+.outline{
+  border: 3px solid black;
+  margin: 5px;
+  padding: 5px;
+  width: 50%;
+  height: 50px;
+  align-content: left;
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  max-width: 800px;
+  align-content: left;
+  text-align: left;
+  border: 2px solid black;
+}
+
+.image{
+  grid-row: 1 / 2;
+  align-content: left;
+  text-align: left;
+
+}
+.text{
+  grid-row: 2 / 3;
+  text-align: left;
+  align-content: left;
+}
+
+.total{
+  grid-row: 4 / 5;
+  align-content: left;
+  text-align: left;
+}
+
+footer{
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #43B047;
+}
+
+.buttonSpace{
+  margin-top: 25px;
+  align-content: left;
+  text-align: left;
+}
+
+#append {
+  background-color: #049CD8 ;
+  align-content: left;
+  text-align: left;
+}
+
+#goomba {
+  background-color: #049CD8;
+}
+
+#bobomb {
+ background-color: #049CD8
+}
+
+#cheepcheep {
+  background-color: #049CD8;
+}
+
+#calculate {
+  background-color: #FBD000;
+  margin-top: 20px;
+}
