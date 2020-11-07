@@ -1,0 +1,53 @@
+ body {
+    background-image: url('racecar.jpeg');
+    background-repeat: no-repeat;
+    width: auto;    
+    height: auto;
+    background-color: black;
+    color: silver;
+  }
+
+  #words {
+      justify-content: left;
+      display: flex;
+      color: silver;
+      font-family: monospace 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: medium;
+      margin-bottom: 4px;
+    }
+
+#btnClick {
+    background-color: silver;
+    border: none;
+    color:black;
+    padding: 6px;
+    text-decoration: none;
+    display: grid;
+    font-size: 16px;
+    margin: 4px 4px;
+    border-radius: 12px;
+}
+
+#countdown {
+    color: silver;
+    margin: 4px 4px;
+    font-size: large;
+}
+
+#showcount {
+    justify-content: left;
+    display: flex;
+    color: silver;
+    font-family: monospace 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    margin-bottom: 4px;
+}
+
+#lastScore {
+    justify-content: left;
+    display: flex;
+    color: silver;
+    font-family: monospace 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    margin-bottom: 4px;
+}
