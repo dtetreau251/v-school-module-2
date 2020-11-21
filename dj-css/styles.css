@@ -1,0 +1,132 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-gap: 30px;
+    padding: 10px;
+}
+
+#box1 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+#box1:hover {
+    background-color: firebrick;
+    width: 50%;
+    border-color: #e95f0a;
+    border-width: 5px;
+}
+
+
+#box2 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+#box2:hover {
+    background-color: #361134;
+    border-color: #b0228c;
+    border-width: 5px;
+    width: 200px;
+}
+
+
+#box3 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    
+}
+
+#box3:hover {
+    background-color: #388659;
+    width: 500px;
+    border-radius: 10%;
+    border-color: #2bd9fe;
+    border-width: 5px;
+}
+
+
+#box4 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    transition-property: background-color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+}
+
+#box4:hover {
+    background-color: #69DC9E;
+    width: 450px;
+    height: 100px;
+    border-color: #0C0C0C;
+    border-width: 5px;
+}
+
+
+#box5 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    transition-property: background-color;
+    transition-duration: .25s;
+    transition-timing-function: ease-in;
+}
+
+#box5:hover {
+    background-color: #A09BE7;
+    width: 275px;
+    border-color: #5F00BA;
+    border-width: 5px;
+    padding: 30px;
+    margin: 30px;
+}
+
+#box6 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+#box6:hover {
+    background-color: #F9F5E3;
+    width: 550px;
+    border-color: #D14081;
+    border-width: 5px;
+    opacity: 0.5;
+}
