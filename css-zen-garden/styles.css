@@ -1,0 +1,308 @@
+/*http://www.csszengarden.com/
+
+For this review of CSS Grid and Flex-box, we will start to mimic the sight "CSS Zen Garden."
+
+The homepage of this site will be a great time to practice CSS Grid and the icons at the bottom will help us see how flex-box is used with CSS Grid. 
+
+This website uses the same HTML to render totally different experiences using different CSS only. Those links can be found in the panel to the right. 
+
+(This will be our <div/> #4) The HTML and CSS in this scrimba cast is a good springboard to copying the layout. I've added some boarder and background 
+
+color to highlight points of interest. 
+
+1. Go to csszengarden.com and become familiar with it in a large window and compare it to it when it's a small window.  
+
+2. Copy and paste the HTML and CSS from this Scrimba Cast into a new directory in your exercises folder. You’ll want to take advantage of the developer tools in Chrome.  
+
+3. Follow the directions in the comments of style.css to apply the same functionality as CSS Zen Garden has. If you get stuck, there is help!*/
+
+body {
+  color: #325050;
+  background: white;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 70%;
+}
+
+#left > h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 5em;
+  padding-left: 3em;
+}
+
+#beauty {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  color: rgba(255,255,255,0.6);
+  font-style: italic;
+  font-size: 2em;
+}
+
+#blank {
+  background-color: #edf4f0;
+}
+
+#left {
+  padding-top: 4em;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+#enlightenment {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.6em;
+  color: black;
+}
+
+#about {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.6em;
+  color: black;
+  padding-top: 1em;
+}
+#benefits {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.6em;
+  color: black;
+  padding-top: 1em;
+}
+
+#participate {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.6em;
+  color: black;
+}
+
+ .participation, .links {
+    background-attachment: scroll, scroll, fixed;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+}
+
+#main {
+  padding-right: 4em;
+  padding-top: .5em;
+  font-family: 'Libre Baskerville', sans-serif;
+  line-height: 1.75em;
+}
+
+.links > p {
+  padding-bottom: 1.5em;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.participation {
+  padding-right: 6em;
+  padding-top: .5em;
+  padding-left: 8em;
+  font-family: 'Libre Baskerville', sans-serif;
+  line-height: 1.75em;
+  padding-bottom: 1em;
+}
+
+header, #right {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: normal;
+  background: #2d6360 50% 0 url(huntington.jpg) no-repeat; /* old IE fallback */
+  background-image: url(enso.svg), url(contours.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+  background-position: 10% 50% ,0 0, 0 0, -5px -25px, 0 50%;
+  background-repeat: no-repeat, repeat, repeat, repeat, no-repeat;
+  background-size: 125px, auto, auto, auto, cover;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;/* default all cells/children on the left be 2/3 the screen width, and all on the right 1/3 */
+  height: 200px;
+  padding: 0px 0 70px 0;
+}
+
+#right {
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0,0,0,0.1) );
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.6em;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: normal;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.6em;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  font-family: 'Julius Sans One', sans-serif;
+  display: grid;
+  grid-template-rows: auto auto auto auto;/* with six rows, 50px high */
+  grid-template-columns: 2fr 1fr;/* default all cells/children on the left be 2/3 the screen width, and all on the right 1/3 */
+}
+
+.container > div {
+  border: solid black 2px;
+  font-size: 1.6em;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: normal;
+}
+
+.intro {
+  padding-right: 3em;
+  padding-top: 3em;
+  padding-left: 8em;
+  font-family: 'Julius Sans One', sans-serif;
+  line-height: 1.75em;
+}
+
+.requirements {
+  padding-right: 6em;
+  padding-left: 8em;
+  font-family: 'Libre Baskerville', sans-serif;
+  line-height: 1.75em;
+  padding-bottom: 3em;
+}
+
+#requirement {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.6em;
+  color: black;
+}
+
+
+.intro a {
+  position: relative;
+    color: #809b7e;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.authors {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #c0cac3;
+  background-color: #edf4f0;
+  padding-right: 6em;
+  padding-top: 3em;
+  padding-left: 4em;
+  line-height: 1.5em;
+}
+
+.authors > p {
+  padding-bottom: 2em;
+  padding-right: 6em;
+}
+
+.page {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+
+.authors a {
+  color: #607476;
+  text-decoration: none;
+}
+
+.links {
+  font-family: 'Julius Sans One', sans-serif;
+  color: #607476;
+  padding-right: 6em;
+  padding-top: 8em;
+  padding-left: 4em;
+  line-height: 1.5em;
+}
+
+.footer {
+  /* make these span the width of the page */
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: normal;
+  background-image: url(koi.jpg);
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: grid;
+  padding: 0px 0 70px 0;
+  grid-column: 1 / span 2;
+  background: #2d6360 50% 0 url(koi.jpg) no-repeat; /* old IE fallback */
+  height: 200px;
+}
+
+.footer > h2 {
+  color: rgba(255,255,255,0.6);
+  font-size: 2em;
+  padding-top: 2em;
+  line-height: 1.75em;
+}
+
+#closing a {
+  color: white;
+}
+
+.footer2 {
+  grid-column: 1 / span 2;/* make these span the width of the page */
+  font-family: 'Julius Sans One', sans-serif;
+  clear: both;
+  padding: 3em 10%;
+  color: #fff;
+  background: #134347;
+  text-align: center;
+  font: 'verdemoderna' 
+}
+
+.footer2 a {
+  display: inline-block;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  padding: 40px 0 0 0;
+  margin: 0 0.5em;
+  font: 'verdemoderna'
+}
+
+footer a::before {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  overflow: visible;
+  font-size: 36px;
+  text-indent: 0;
+
+  /* icomoon.io defaults */
+  font-family: 'verdemoderna';
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+@media (max-width: 900px){
+  /* use this media query to help these two cells drop to the bottom when screens are smaller */
+  .authors {
+       
+  }
+  .links {
+
+  }
+
+  /* container could use some help so that it's children are full screen width */
+  .container {
+      
+  }
+}
+
+/* FLEX */
+/* use flexbox to make the icons behave like css zen garden's social icons */
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+
+.icons > div {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+}
