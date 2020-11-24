@@ -117,6 +117,7 @@ header, #right {
 
 #right {
   background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0,0,0,0.1) );
+  content: ">";
 }
 
 h1 {
@@ -141,7 +142,6 @@ h2 {
 }
 
 .container > div {
-  border: solid black 2px;
   font-size: 1.6em;
   font-family: 'Libre Baskerville', sans-serif;
   font-weight: normal;
