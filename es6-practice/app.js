@@ -41,6 +41,8 @@ const carrots = ["bright orange", "ripe", "rotten"]
 
 mapVegetables = arr => arr.map(carrot => ({ type: "carrot", name: carrot }))
 
+console.log(mapVegetables(["bright orange", "ripe", "rotten"]))
+
 
 /*Task 2
 Re-write this .filter() using an arrow function*/
@@ -66,6 +68,25 @@ const people = [
 
 filterForFriendly = arr => arr.filter(person => person.friendly)
 
+console.log(filterForFriendly([
+    {
+        name: "Princess Peach",
+        friendly: false
+    },
+    {
+        name: "Luigi",
+        friendly: true
+    },
+    {
+        name: "Mario",
+        friendly: true
+    },
+    {
+        name: "Bowser",
+        friendly: false
+    }
+]))
+
 /*Task 3
 Re-write the following functions to be arrow functions:*/
 
@@ -87,10 +108,9 @@ age should default to 100
 Extra Credit
 Use template literals to build the string*/
 
-greeting = (firstName, lastName, ages) => `Hi ${firstName} ${lastName}, how does it feel to be ${ages}?`
+greeting = (firstName = "Jane", lastName = "Doe", ages = 100) => `Hi ${firstName} ${lastName}, how does it feel to be ${ages}?`
 
-greeting("Jane", "Doe" , 100)
-greeting("David", "Tetreau", 38)
+console.log(greeting())
 
 
 /*Task 5
@@ -116,9 +136,15 @@ Use the shorthand syntax to make the following filter take up one line.
     }
  ];
  
- filterForDogs = arr => arr.filter(animal => {if (animal.type === "dog") {return true} else {return false}})
+ filterForDogs = arr => arr.filter(animal => {
+     if (animal.type === "dog") {
+         return true
+        } else {
+        return false
+    }
+})
 
- console. log (filterForDogs([
+ console.log(filterForDogs([
     {
         type: "dog",
         name: "theodore"
