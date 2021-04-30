@@ -1,0 +1,62 @@
+{
+    "appetizers": [
+        {
+            "name": "tuna dip" ,
+            "ingregients": ["tuna","mayonaise","spices"],
+            "description": "smoked tuna dip with crackers" 
+        },
+        {
+            "name": "hush puppies" ,
+            "ingregients": ["corn meal","flour","egg", "milk"],
+            "description": "basket of six hush puppies" 
+        }
+    ],
+    "cold sandwiches": [
+        {
+            "name": "italian" ,
+            "ingregients": ["italian bread","salami","provalone"],
+            "description": "6 inch italian sub sandwich" 
+        },
+        {
+            "name": "bologna and cheese" ,
+            "ingregients": ["bologna","cheese"],
+            "description": "bologna and cheese sandwich" 
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name": "chicken philly",
+            "ingregients": ["chicken","american cheese","italian bread"],
+            "description": "chicken philly cheese steak sandwich" 
+        },
+        {
+            "name": "hamburger" ,
+            "ingregients": ["bun","handburger","cheese"],
+            "description": "1/4 pound hamburger" 
+        }
+    ],
+    "desserts": [
+        {
+            "name": "cake" ,
+            "ingregients": ["eggs","flour","milk", "butter", "chocolate"],
+            "description": "chocolate lava cake" 
+        },
+        {
+            "name": "pie" ,
+            "ingregients": ["apple","crust","filling"],
+            "description": "hot apple pie" 
+        }
+    ], 
+    "drinks": [
+        {
+            "name": "beer" ,
+            "ingregients": ["beer"],
+            "description": "IPA beer" 
+        },
+        {
+            "name": "whiskey" ,
+            "ingregients": ["whiskey"],
+            "description": "Jameson Irish Whiskey" 
+        }
+    ]
+}
